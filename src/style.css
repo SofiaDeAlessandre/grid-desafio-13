@@ -5,6 +5,11 @@
 }
 
 body {
+  background: linear-gradient(to bottom, #000, rgba(0, 0, 0, 0.5)),
+    url(/assets/img-background.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,10 +18,14 @@ body {
 }
 
 #input {
- height: 50px;
+  text-align: right;
+  color: white;
+  height: 50px;
   border-radius: 5px;
   font-size: 35px;
-  border: 2px solid black
+  border: 1px solid rgb(246, 237, 237);
+  box-shadow: 5px 5px 5px rgb(38, 55, 124);
+  margin-bottom: 6px;
 }
 
 #div-btn {
@@ -25,7 +34,13 @@ body {
 }
 
 .btn {
-  background-color: black;
+  background: rgb(78, 145, 89);
+  background: linear-gradient(
+    90deg,
+    rgb(38, 55, 124) 91%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  box-shadow: 5px 5px 5px rgb(195, 205, 243);
   border-radius: 10px;
   color: white;
   width: 50px;
